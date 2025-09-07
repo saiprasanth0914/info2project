@@ -1,0 +1,404 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Idea2Project</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Impact
+  * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header fixed-top">
+    <div class="branding d-flex align-items-center">
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="{% url 'home' %}" class="logo d-flex align-items-center">
+          <h1 class="sitename">Idea2Project</h1>
+          <span>.</span>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home<br></a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section accent-background">
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-5 justify-content-between">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h2><span>Welcome to </span><span class="accent">Idea2Project</span></h2>
+            <p>We turn your academic ideas into reality. Get custom-built B.Tech, M.Tech, and Diploma engineering projects with complete guidance, documentation, and support.</p>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2">
+            <img src="https://learnengineering.in/wp-content/uploads/2023/03/CSE-PROJECT-COLLECTION-1.jpg" class="img-fluid" alt="Engineering Projects">
+          </div>
+        </div>
+      </div>
+
+      <div class="icon-boxes position-relative" data-aos="fade-up" data-aos-delay="200">
+        <div class="container position-relative">
+          <div class="row gy-4 mt-5">
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-braces"></i></div>
+                <h4 class="title"><a href="#services" class="stretched-link">Software Projects</a></h4>
+                <p class="small">Web, Android, Python, ML, and AI-based final year projects</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-laptop-code"></i></div>
+                <h4 class="title"><a href="#services" class="stretched-link">CSE Projects</a></h4>
+                <p class="small">Mini and major academic projects tailored for CSE domain students</p>
+              </div>
+            </div><!-- End CSE Card -->
+
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-journal-code"></i></div>
+                <h4 class="title"><a href="#services" class="stretched-link">Project Documentation</a></h4>
+                <p class="small">Complete project report, abstract, PPT, and IEEE paper support</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-person-video3"></i></div>
+                <h4 class="title"><a href="#contact" class="stretched-link">1:1 Mentorship</a></h4>
+                <p class="small">Expert guidance, explanation videos, and one-on-one support</p>
+              </div>
+            </div><!-- End Icon Box -->
+          </div>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us</h2>
+        <p>Empowering engineering students to bring their innovative ideas to life through professional project development services.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3>Your Engineering Project Partner</h3>
+            <img src="https://media.istockphoto.com/id/1400739452/vector/about-us-web-header-design-icon-interconnected-symbol-of-company-profile-corporate.jpg?s=612x612&w=0&k=20&c=-zgp-xnEqh8zBEjNajlPZmDF5PXuqlXVUu7RjBf_UGU=" class="img-fluid rounded-4 mb-4" alt="About Idea2Project">
+            <p>Idea2Project is a student-focused organization that helps engineering graduates and diploma students complete their academic projects with confidence. We deliver ready-to-deploy software, hardware, and hybrid solutions backed with full documentation and technical guidance.</p>
+            <p>Whether you're short on time, stuck on an idea, or looking for innovation — we are your reliable partner. With hundreds of successful projects delivered, we bridge the gap between ideas and implementation with creativity, precision, and mentorship.</p>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">Why choose Idea2Project?</p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Customized project solutions for CS, IT, ECE, EEE, Mechanical & Civil branches.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Complete support including source code, report, PPT, and video explanation.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Experienced mentors and quick delivery with high-quality assurance.</span></li>
+              </ul>
+              <p>From minor mini-projects to major final-year research projects, we help you build and present your work professionally to meet academic expectations and beyond.</p>
+              <div class="position-relative mt-4">
+                <img src="https://www.shutterstock.com/image-photo/why-choose-us-businessman-holding-600nw-1431803342.jpg" class="img-fluid rounded-4" alt="Mentorship and Delivery">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Services</h2>
+        <p>We deliver quality, customized academic project solutions in trending technologies to help students excel.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-terminal"></i></div>
+              <h3>Python Applications</h3>
+              <p>We build custom Python-based tools and applications using frameworks like Django, Flask, and Tkinter for automation, desktop apps, and academic projects.</p>
+              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-globe2"></i></div>
+              <h3>Web Applications</h3>
+              <p>We create modern full-stack websites using HTML, CSS, JS, Django, React, and APIs tailored for student project requirements.</p>
+              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-cpu"></i></div>
+              <h3>Machine Learning Projects</h3>
+              <p>We develop ML-based projects using Python, Scikit-learn, and TensorFlow covering predictive models, image processing, and NLP.</p>
+              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-layers"></i></div>
+              <h3>MERN Stack Projects</h3>
+              <p>Our team delivers dynamic single-page applications using MongoDB, Express.js, React, and Node.js for real-time student project demos.</p>
+              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-robot"></i></div>
+              <h3>AI Projects</h3>
+              <p>We offer AI-driven academic projects involving neural networks, chatbots, computer vision, and intelligent decision-making systems.</p>
+              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-cloud-upload"></i></div>
+              <h3>Cloud Computing Projects</h3>
+              <p>We build and deploy cloud-based student projects using AWS, Firebase, and Azure to demonstrate scalable solutions and services.</p>
+              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Services Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Team</h2>
+        <p>Meet the dedicated developers behind Idea2Project</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src="{% static 'img/team/team-1.jpg' %}" class="img-fluid" alt="">
+              <h4>R. Saiprasanth</h4>
+              <span>Python Developer</span>
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <img src="{% static 'img/team/team-3.jpg' %}" class="img-fluid" alt="">
+              <h4>P. Harshath</h4>
+              <span>MERN Stack Developer</span>
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+        </div>
+      </div>
+    </section><!-- /Team Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Have a project idea? Let’s bring it to life! Reach out to Idea2Project today.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gx-lg-0 gy-4">
+          <div class="col-lg-4">
+            <div class="info-container d-flex flex-column align-items-center justify-content-center">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Tirupati, Andhra Pradesh, India - 517501</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+91 98765 43210</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>support@idea2project.com</p>
+                </div>
+              </div><!-- End Info Item -->
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <form action="" method="post" class="django-email-form" data-aos="fade" data-aos-delay="100">
+              {% csrf_token %}
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <div class="loading" style="display: none;">Loading</div>
+                  {% if messages %}
+                    {% for message in messages %}
+                      <div class="{% if message.tags == 'success' %}sent-message{% else %}error-message{% endif %}">
+                        {{ message }}
+                      </div>
+                    {% endfor %}
+                  {% endif %}
+                  <button type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="{% url 'home' %}" class="logo d-flex align-items-center">
+            <span class="sitename">Idea2Project</span>
+          </a>
+          <p>At Idea2Project, we help students transform their innovative ideas into fully functional engineering projects. We offer end-to-end guidance, development, and support.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#services">Project Development</a></li>
+            <li><a href="#services">Mini Projects</a></li>
+            <li><a href="#services">Final Year Projects</a></li>
+            <li><a href="#services">Documentation Support</a></li>
+            <li><a href="#services">Online Guidance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>Idea2Project Office</p>
+          <p>Tirupati, Andhra Pradesh 517501</p>
+          <p>India</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+91 98765 43210</span></p>
+          <p><strong>Email:</strong> <span>support@idea2project.com</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>{{ 'now' | date:'Y' }}</span> <strong class="px-1 sitename">Idea2Project</strong>. All Rights Reserved</p>
+      <div class="credits">
+        Designed & Developed by <a href="#">Idea2Project Team</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
